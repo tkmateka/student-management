@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="full-vh flex">
+        <div class="side-menu">
+            <div class="side-menu-logo flex center-center">
+                <img src="/images/logo.png" alt="Logo">
+            </div>
+            <div id="menu-items" class="flex column gap-3px">
+                <div class="menu-item">
+                    <img src="/images/dashboard.png" alt="dashboard" width="25" height="25">
+                    <p>Dashboard</p>
+                </div>
+                <div class="menu-item">
+                    <img src="/images/teachers.png" alt="teachers" width="25" height="25">
+                    <p>Teachers</p>
+                </div>
+                <div class="menu-item">
+                    <img src="/images/students.png" alt="students" width="25" height="25">
+                    <p>Students</p>
+                </div>
+            </div>
+        </div>
+        <div class="main-container">
+            <nav>
+                <p id="userName"></p>
+                <img src="/images/profile-image.png" alt="Profile image">
+            </nav>
+            <div class="displayer">
+                <h3>Dashboard</h3>
+                <p>Home <b class="red-color">> Dashboard</b></p>
+
+                <div class="flex column gap-1em">
+                    <!-- Counts -->
+                    <div class="flex spacebetween-center">
+                        <div class="mini-cards flex center-center column">
+                            <h2 class="no-margin" id="studentCount">233</h2>
+                            <p>Students</p>
+                        </div>
+                        <div class="mini-cards flex center-center column">
+                            <h2 class="no-margin" id="teacherCount">26</h2>
+                            <p>Teachers</p>
+                        </div>
+                    </div>
+
+                    <!-- Top Students -->
+                    <div class="card table-card">
+                        <h3>Top Students</h3>
+                        <table>
+                            <thead>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email Address</th>
+                            </thead>
+                            <tbody id="tbody">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/dashboard.js"></script>
+</body>
+
+</html>

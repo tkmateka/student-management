@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="full-vh flex center-center">
+        <form class="card" id="registerForm">
+            <h2>Sign Up</h2>
+            <p>This is a student management application</p>
+
+            <div class="input-container">
+                <input id="firstName" oninput="inputChanged('firstName')" type="text" required placeholder="Enter your first name">
+                <div class="error-msg">
+                    <small id="firstNameError" hidden>This field is required</small>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <input id="lastName" oninput="inputChanged('lastName')" type="text" required placeholder="Enter your last name">
+                <div class="error-msg">
+                    <small id="lastNameError" hidden>This field is required</small>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <input id="email" oninput="inputChanged('email')" type="email" required placeholder="Enter your email address">
+                <div class="error-msg">
+                    <small id="emailError" hidden>This field is required</small>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <input id="password" oninput="inputChanged('password')" type="password" required placeholder="Enter your password">
+                <div class="error-msg">
+                    <small id="passwordError" hidden>This field is required</small>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <input id="confirmPassword" oninput="inputChanged('confirmPassword')" type="password" required placeholder="Re-enter your password">
+                <div class="error-msg">
+                    <small id="confirmPasswordError" hidden>This field is required</small>
+                </div>
+            </div>
+
+            <div class="flex column gap-05em">
+                <small>Already have an account? <b><a href="/login.html">Sign In</a></b></small>
+                <button id="registerBtn" class="btn blue-btn">Sign Up</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="/register.js"></script>
+</body>
+
+</html>
